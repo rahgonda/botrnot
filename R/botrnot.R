@@ -36,7 +36,7 @@ botornot.data.frame <- function(x, fast = FALSE) {
     ## extract features
     x <- extract_features_ytweets(x)
     ## get model
-    m <- botornot_models$ytweets
+    m <- botornot_models$ytweets #where is the botornot_models object created? getting an error that's hung up here
   }
   ## classify data
   p <- classify_data(x, m)
